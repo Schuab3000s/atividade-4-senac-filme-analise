@@ -1,0 +1,18 @@
+#themeToggleBtn {
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 1000; 
+}
+
+.theme-icon {
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}

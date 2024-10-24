@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de Análise</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link id="themeStylesheet" rel="stylesheet" href="light-theme.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="themeToggleBtn">
+                <i id="lightIcon" class="fa-regular fa-sun theme-icon"></i>
+                <i id="darkIcon" class="fa-solid fa-moon theme-icon hidden"></i>
+            </div>
+            <h2 class="mt-4">Cadastro de Análise</h2>
+            <form id="analiseForm">
+                <div class="form-group">
+                    <label for="analise">Análise:</label>
+                    <textarea class="form-control" id="analise" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="nota">Nota:</label>
+                    <input type="number" class="form-control" id="nota" required min="0" max="10">
+                </div>
+                <input type="hidden" id="filmeId">
+                <button type="button" id="salvarAnaliseBtn" class="btn btn-primary">Salvar</button>
+            </form>
+            <button type="button" id="voltarBtn" class="btn btn-secondary mt-3">Voltar</button>
+        </div>
+        <script src="form-analise.js"></script>
+        <script src="theme.js"></script>
+    </body>
+</html>

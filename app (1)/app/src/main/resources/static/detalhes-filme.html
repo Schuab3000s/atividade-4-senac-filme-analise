@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Detalhes do Filme</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link id="themeStylesheet" rel="stylesheet" href="light-theme.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="themeToggleBtn">
+                <i id="lightIcon" class="fa-regular fa-sun theme-icon"></i>
+                <i id="darkIcon" class="fa-solid fa-moon theme-icon hidden"></i>
+            </div>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h2 class="card-title">Detalhes do Filme</h2>
+                    <div><strong>Título:</strong> <span id="titulo"></span></div>
+                    <div><strong>Sinopse:</strong> <span id="sinopse"></span></div>
+                    <div><strong>Gênero:</strong> <span id="genero"></span></div>
+                    <div><strong>Ano de Lançamento:</strong> <span id="anoLancamento"></span></div>
+                    <button type="button" id="editarFilmeBtn" class="btn btn-warning mt-3">Editar Filme</button>
+                    <button type="button" id="adicionarAnaliseBtn" class="btn btn-success mt-3">Adicionar Análise</button>
+                    <button type="button" id="voltarBtn" class="btn btn-secondary mt-3">Voltar para Lista de Filmes</button>
+                </div>
+            </div>
+        </div>
+        <script src="detalhes-filme.js"></script>
+        <script src="theme.js"></script>
+    </body>
+</html>

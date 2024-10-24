@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Análises</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />      
+        <link id="themeStylesheet" rel="stylesheet" href="light-theme.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container mt-4">
+            <h2>Listagem de Análises</h2>
+            <button type="button" id="voltarListaFilmesBtn" class="btn btn-secondary mb-3">Voltar para Lista de Filmes</button>
+            <div id="themeToggleBtn">
+                <i id="lightIcon" class="fa-regular fa-sun theme-icon"></i>
+                <i id="darkIcon" class="fa-solid fa-moon theme-icon hidden"></i>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Filme</th>
+                        <th>Análise</th>
+                        <th>Nota</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="analisesTableBody"></tbody>
+            </table>
+        </div>
+        <script src="lista-analises.js"></script>
+        <script src="theme.js"></script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #343a40;
+}
+
+.card-title {
+    color: #ffffff;
+}
+
+button {
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #375a7f;
+    border-color: #375a7f;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: #495057;
+    border-color: #495057;
+    color: #ffffff;
+}
+
+.btn-success {
+    background-color: #218838;
+    border-color: #218838;
+    color: #ffffff;
+}
+
+.btn-warning {
+    background-color: #e0a800;
+    border-color: #e0a800;
+    color: #000000;
+}
+
+.btn-info {
+    background-color: #138496;
+    border-color: #138496;
+    color: #ffffff;
+}
+
+.table {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #343a40;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.form-control {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #495057;
+}
+
+label {
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #63a4ff;
+}
+
+#themeToggleBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 1000;
+}
+
+.theme-icon {
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
